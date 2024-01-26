@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-    <nav class="navbar-light bg-light navbar-color">
+    <nav class="fixed-top prova">
       <div class="container">
         <header
           class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
@@ -31,22 +31,27 @@
             <svg class="bi me-2" width="40" height="32">
               <use xlink:href="#bootstrap"></use>
             </svg>
-            <span class="fs-4">Welcome</span>
+            <span class="fs-4 text-secondary ">Welcome</span>
           </a>
 
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <button class="nav-link active bg-dark">
+              <button class="nav-link">
                 <a
                   href="index.html"
                   aria-current="page"
-                  class="text-light link-underline link-underline-opacity-0"
+                  class=" text-secondary link-underline link-underline-opacity-0"
                   >Home</a
                 >
-              </button>
+              
             </li>
+  
+            <button class="nav-link">
             <li class="nav-item">
-              <a href="./contact.html" class="nav-link text-dark">Contact</a>
+              <a href="./contact.html" 
+              aria-current="page"
+              class="  text-secondary link-underline link-underline-opacity-0">Contact</a>
+            </button>
             </li>
           </ul>
         </header>
@@ -195,4 +200,3 @@
     <script src="script.js"></script>
   </body>
 </html>
-

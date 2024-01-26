@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <nav>
+    <nav class="fixed-top prova">
       <div class="container">
         <header
           class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
@@ -32,27 +32,34 @@
             <svg class="bi me-2" width="40" height="32">
               <use xlink:href="#bootstrap"></use>
             </svg>
-            <span class="fs-4">Contact me</span>
+            <span class="fs-4 text-secondary ">Contact me</span>
           </a>
 
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a
-                href="index.html"
-                class="nav-link active text-light bg-dark"
-                aria-current="page"
-                >Home</a
-              >
+              <button class="nav-link">
+                <a
+                  href="index.html"
+                  aria-current="page"
+                  class=" text-secondary link-underline link-underline-opacity-0"
+                  >Home</a
+                >
+              
             </li>
+  
+            <button class="nav-link">
             <li class="nav-item">
-              <a href="./contact.html" class="nav-link text-dark">Contact</a>
+              <a href="./contact.html" 
+              aria-current="page"
+              class="  text-secondary link-underline link-underline-opacity-0">Contact</a>
+            </button>
             </li>
           </ul>
         </header>
       </div>
     </nav>
     <main>
-      <div>
+      <div class="p-2 p-md-5 mb-4">
         <form
           action=""
           method="post"
@@ -88,7 +95,7 @@
             id=""
             cols="30"
             rows="5"
-            placeholder="Contact form is not active yet it is for Educational pourpose"
+            placeholder="Contact form is not active yet it is for Educational pourpose only"
             required
           ></textarea>
           <button type="submit" class="btn text-light bg-dark">Submit</button>
@@ -185,5 +192,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

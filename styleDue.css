@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: "Borel", cursive;
- 
+  padding-top: 80px;
 }
 
 h1 {
@@ -11,10 +11,7 @@ h1 {
   padding: 50px;
 }
 
-/* .container1 {
-  background-color: #84a7a1;
-  padding: 1rem;
-} */
+
 
 .london {
   display: block;
@@ -82,15 +79,11 @@ a {
   padding: 20px 0;
 }
 
-/* display background color black on navbar scroll */
-.navbarScroll.navbarDark {
-  background-color: black;
-}
 
-/* .navbar-fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
-} */
+
+nav.scrolled {
+  background: #0a0a0a;
+}
 
 .pulsante {
   transition-duration: 0.4s;

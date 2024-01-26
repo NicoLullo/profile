@@ -1,49 +1,30 @@
-/* // add class navbarDark on navbar scroll
-let header = document.querySelector(".navbar");
+var nav = document.querySelector(".prova"); // Identify target
 
-window.onscroll = function () {
-  let top = window.scrollY;
-  if (top >= 100) {
-    header.classList.add("navbarDark");
+window.addEventListener("scroll", function (event) {
+  // To listen for event
+  event.preventDefault();
+
+  if (window.scrollY <= 150) {
+    // Just an example
+    nav.style.backgroundColor = "White"; // or default color
   } else {
-    header.classList.remove("navbarDark");
+    nav.style.backgroundColor = "black";
   }
-};
- */
-/* $(function () {
-  $(document).scroll(function () {
-    var $nav = $(".navbar-fixed-top");
-    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-  });
 });
- */
-let colore = document.querySelector(".myButton");
 
-/* function mouseOver() {
-  color.style.background = "white";
-}
-function mouseOut() {
-  color.style.background = "black";
-} */
+let write = document.querySelector(".myButton");
 
-/* document.addEventListener("click", myFunction);
-
-function myFunction() {
-  color.style.background = "white";
-}
- */
-
-colore.addEventListener(
+write.addEventListener(
   "mouseenter",
   function (event) {
-    event.target.style.color = "Red";
+    event.target.innerHTML = "Hello!!!";
   },
   false
 );
-colore.addEventListener(
+write.addEventListener(
   "mouseleave",
   function (event) {
-    event.target.style.color = "";
+    event.target.innerHTML = "Nico Lullo";
   },
   false
 );
